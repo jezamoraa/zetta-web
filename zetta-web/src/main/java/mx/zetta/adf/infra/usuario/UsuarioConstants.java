@@ -1,8 +1,8 @@
 package mx.zetta.adf.infra.usuario;
 
-import mx.zetta.adf.infra.Constants;
+public class UsuarioConstants {
 
-public class UsuarioConstants extends Constants {
+    public static final String PATH = UsuarioConstants.class.getPackage().getName().replace(".", "/") + "/";
     public static final String USUARIO_M01 = "USUARIO_M01";
     public static final String USUARIO_M02 = "USUARIO_M02";
     public static final String USUARIO_M03 = "USUARIO_M03";
