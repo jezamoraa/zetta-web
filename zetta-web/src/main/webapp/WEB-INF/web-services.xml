@@ -4,15 +4,13 @@
 	xmlns:soap="http://cxf.apache.org/bindings/soap"
 	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
-	<jaxws:endpoint implementor="mx.zetta.adf.business.product.ProductWebService"
-		address="/ProductWebService">
+
+	<jaxws:endpoint implementor="mx.zetta.adf.CustomerWebService2"
+		address="/CustomerWebService2">
 	</jaxws:endpoint>
 
-	<jaxws:endpoint implementor="mx.zetta.adf.business.customer.CustomerWebService"
-		address="/CustomerWebService">
-	</jaxws:endpoint>
-
-	<jaxws:endpoint implementor="mx.zetta.adf.business.salesorder.SalesOrderWebService"
-		address="/SalesOrderWebService">
-	</jaxws:endpoint>
+	<!--<jaxws:endpoint implementor="mx.zetta.adf.business.product.ProductWebService" 
+		address="/ProductWebService"> </jaxws:endpoint> <jaxws:endpoint implementor="mx.zetta.adf.business.customer.CustomerWebService" 
+		address="/CustomerWebService"> </jaxws:endpoint> <jaxws:endpoint implementor="mx.zetta.adf.business.salesorder.SalesOrderWebService" 
+		address="/SalesOrderWebService"> </jaxws:endpoint> -->
 </beans>
