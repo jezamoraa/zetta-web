@@ -5,6 +5,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Main page</title>
 </head>
-<body>Main Page : ${greeting}
+<body>Main Page : ${mensaje}
 </body>
 </html>

@@ -42,7 +42,7 @@ public class CustomerService {
     @Transactional(propagation = Propagation.REQUIRED)
     public void update(Customer customer) {
 
-        Customer customerDB = entityManager.find(Customer.class, customer.getCode());
+        final Customer customerDB = entityManager.find(Customer.class, customer.getCode());
         customerDB.setCurrentCredit(customer.getCurrentCredit());
         customerDB.setName(customer.getName());
         customerDB.setAddress(customer.getAddress());

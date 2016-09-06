@@ -14,12 +14,12 @@ public class UsuarioRestService {
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping(value = "/usuario.json", produces = "application/json", method = RequestMethod.GET)
-    public Greeting greetingJSON(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new Greeting(counter.incrementAndGet(), String.format(template, name));
+    public Saludo greetingJSON(@RequestParam(value = "name", defaultValue = "World") String name) {
+        return new Saludo(counter.incrementAndGet(), String.format(template, name));
     }
 
     @RequestMapping(value = "/usuario.xml", produces = "application/xml", method = RequestMethod.GET)
-    public Greeting greetingXML(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new Greeting(counter.incrementAndGet(), String.format(template, name));
+    public Saludo greetingXML(@RequestParam(value = "name", defaultValue = "World") String name) {
+        return new Saludo(counter.incrementAndGet(), String.format(template, name));
     }
 }

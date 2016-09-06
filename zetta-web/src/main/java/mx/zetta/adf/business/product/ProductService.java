@@ -40,7 +40,7 @@ public class ProductService {
 
     @Transactional(propagation = Propagation.REQUIRED)
     public void update(Product product) {
-        Product productDB = entityManager.find(Product.class, product.getCode());
+        final Product productDB = entityManager.find(Product.class, product.getCode());
         productDB.setDescription(product.getDescription());
         productDB.setPrice(product.getPrice());
         productDB.setQuantity(product.getQuantity());

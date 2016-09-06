@@ -11,13 +11,13 @@ public class UsuarioWebController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String sayHello(ModelMap model) {
-        model.addAttribute("greeting", "Hello World from Spring 4 MVC");
+        model.addAttribute("message", "Hello World from Spring 4 MVC");
         return UsuarioConstants.PATH + "usuario";
     }
 
     @RequestMapping(value = "/again", method = RequestMethod.GET)
     public String sayHelloAgain(ModelMap model) {
-        model.addAttribute("greeting", "Hello World Again, from Spring 4 MVC");
+        model.addAttribute("message", "Hello World Again, from Spring 4 MVC");
         return UsuarioConstants.PATH + "usuario";
     }
 

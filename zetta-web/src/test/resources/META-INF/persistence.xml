@@ -5,11 +5,12 @@
 	<persistence-unit name="crossover-pu"
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<!-- Business -->
 		<class>mx.zetta.adf.commons.business.entities.Customer</class>
 		<class>mx.zetta.adf.commons.business.entities.Product</class>
 		<class>mx.zetta.adf.commons.business.entities.SalesOrder</class>
 		<class>mx.zetta.adf.commons.business.entities.OrderLines</class>
-		
+		<!-- Infra -->
 		<class>mx.zetta.adf.commons.infra.entities.Session</class>
 		<class>mx.zetta.adf.commons.infra.entities.Usuario</class>
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>

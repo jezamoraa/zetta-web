@@ -5,19 +5,19 @@ import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name = "Greeting")
-public class Greeting implements Serializable {
+@XmlRootElement(name = "Saludo")
+public class Saludo implements Serializable {
     private static final long serialVersionUID = 1L;
     @XmlAttribute
     private long id;
     @XmlAttribute
     private String content;
 
-    public Greeting() {
+    public Saludo() {
 
     }
 
-    public Greeting(long id, String content) {
+    public Saludo(long id, String content) {
         this.id = id;
         this.content = content;
     }

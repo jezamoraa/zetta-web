@@ -12,7 +12,7 @@ public class IndexWebController {
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView sayHello() {
         final ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("greeting", "main page");
+        modelAndView.addObject("mensaje", "pagina Principal Java");
         modelAndView.setViewName(IndexConstants.PATH + "index");
         return modelAndView;
     }
